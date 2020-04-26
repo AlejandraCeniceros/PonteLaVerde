@@ -1,10 +1,17 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,400;1,600;1,700&display=swap');
+@font-face{
+    font-family: "Merriweather";
+    src:url(../PonteLaVerde/Merriweather/Merriweather-Regular.ttf);
+}
+@font-face{
+    font-family: "Open Sans";
+    src:url(../PonteLaVerde/Open_Sans/OpenSans-Regular.ttf);
+}
 
 *{
     box-sizing: border-box;
 }
+
 
 img{
     display: block;
@@ -19,14 +26,16 @@ h1, h2,h3, h4, h5 , h6 {
     font-family: 'Merriweather', sans-serif;
     letter-spacing: 1.5px;
 }
+h2{
+    margin-top: 45px;
+    text-align: center;
+}
 .contenedor{
     margin: auto;
     width: 95%;
+
 }
-.contenedor-title{
-    background: green;
-    shape-margin: 15px;
-}
+
 /*------------------------*/
 .header{
     height: 60px;
@@ -37,47 +46,118 @@ h1, h2,h3, h4, h5 , h6 {
 }
 .logo, .icon-menu{
     margin: 5px;
-    color: #0a7722;
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+
 
 }
+.contenedor-title{
+    background: rgb(16, 136, 16);
+    margin-right: 5px;
+    margin-left: 5px;
+
+
+    margin-bottom: initial;
+    margin-top: 11px;
+    justify-content: space-between;
+
+    text-align: left;
+    
+}
 .icon-menu{
+ 
+    margin-left: 10px;
+    margin-right: 0 px;
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 35px;
     font-size: 30px;
-    background: #fff7e8;
-    columns: #000000;;
-    text-align: center;
-    line-height: 45px;
+    background: rgb(255, 255, 255);
+    columns: #000000;
+    line-height: 40px;
     border-radius: 5px;
+    color: #000000;
     margin-left: auto;
     cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
 }
 /*-.menu---------------*/
 .nav{
     position: absolute;
     top: 60;
-    left: -100%;
+    left: 100%;
+    right: -100%;
     width: 100%;
     transition: all 0.4s;
 }
 .menu{
-    list-style: none;
+    list-style-type: none ;
     padding: 0;
     margin: 0;
 
 }
 .menu__link{
+   
     display: block;
     padding: 15px;
     background: #fff7e8;
-    color: #000000;
+    color: rgb(8, 8, 8);
     text-decoration: none;
 }
-.menu__link:hover, select{
+.menu__link:hover, .select{
     background: white;
-    columns: #000000;;
+    columns: #303030;;
+    
 }
 .show{
     left:0;
+}
+
+
+
+/*---------banner-----------------*/
+
+.banner{
+    margin-top: 60px;
+    position: relative;
+    z-index: 1000;
+}
+.banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*ñ-----------info----------------*/
+
+.info__columna{
+    background: #f2fad1;
+    color:black;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.somos__columna{
+    position: relative;
+}
+.somos__descripcion{
+    position: absolute;
+    top:0;
+    left: 0;
+    color: #ffff;
+    background: rgba(0,0,0,0,5);
+    width: 60%;
+}
+
+.somos__titulo{
+    font-size: 25px;
+    margin:5px 0;
+
 }
