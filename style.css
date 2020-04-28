@@ -8,50 +8,77 @@
     src:url(../PonteLaVerde/Open_Sans/OpenSans-Regular.ttf);
 }
 
+
 *{
     box-sizing: border-box;
 }
 
-
-img{
-    display: block;
-    max-width: 100%;
-}
 body{
     font-family:'Merriweather', sans-serif;
     margin: 0;
 
 }
+
+/* ---------------------base*/
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
 h1, h2,h3, h4, h5 , h6 {
-    font-family: 'Merriweather', sans-serif;
     letter-spacing: 1.5px;
+    margin: 0;
 }
-h2{
-    margin-top: 45px;
-    text-align: center;
-}
-.contenedor{
+
+
+.container{
     margin: auto;
     width: 95%;
-
 }
-
-/*------------------------*/
-.header{
-    height: 60px;
-}
-.header .contenedor{
+.container--flex{
     display: flex;
-    justify-content: space-between;
+ /**/   flex-wrap: wrap;
+ /**/   justify-content: space-between;
+ /**/   align-items: center;
 }
-.logo, .icon-menu{
+
+.column{
+    width: 100%;
+}
+/*-----------header------------*/
+.main-header{
+    width: 100%;
+}
+.logo {
     margin: 5px;
     color: #000000;
-    font-size: 25px;
-    text-align: center;
+    font-size: 1.8em;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.main-header__contactInfo__phone{
+    background: #0000;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+.main-header__contactInfo__adress{
+    padding:10px;
+    margin:0;
+    color: white;
 
 
 }
+
+.main-header [class*="icon-"]:before {
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
 .contenedor-title{
     background: rgb(16, 136, 16);
     margin-right: 5px;
@@ -65,49 +92,75 @@ h2{
     text-align: left;
     
 }
+
+
+/****** menu*****/
+
+.main-nav{
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+}
 .icon-menu{
  
-    margin-left: 10px;
-    margin-right: 0 px;
+  
     display: block;
-    width: 30px;
+    color: #ffffff;
+   /* width: 30px;
     height: 35px;
     font-size: 30px;
     background: rgb(255, 255, 255);
     columns: #000000;
     line-height: 40px;
     border-radius: 5px;
-    color: #000000;
+    
     margin-left: auto;
     cursor: pointer;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 5px; */
 }
-/*-.menu---------------*/
-.nav{
-    position: absolute;
-    top: 60;
-    left: 100%;
-    right: -100%;
-    width: 100%;
-    transition: all 0.4s;
+
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon [class*="icon"]{
+    color: black;
+    margin-left: 10px;
+    display:1.3em;
+    width: 35px;
+    height: 34px;
+    background: white;
+    border-radius: 50%;
+  
 }
 .menu{
+    position: absolute;
+    top: 60%;
+    left:0%;
+    width: 100%;
+    background: rgba(45, 51, 38, 0.85);
     list-style-type: none ;
     padding: 0;
     margin: 0;
+    text-align: center;
 
 }
 .menu__link{
    
     display: block;
     padding: 15px;
-    background: #fff7e8;
-    color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
-.menu__link:hover, .select{
-    background: white;
+.menu__link:hover{
+    background: rgba(130, 199, 57, 0.85);
+
+}
+.menu__link--select{
+    background: rgba(130, 199, 57, 0.85);
     columns: #303030;;
     
 }
