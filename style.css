@@ -129,12 +129,19 @@ h1, h2,h3, h4, h5 , h6 {
 .social-icon [class*="icon"]{
     color: black;
     margin-left: 10px;
-    display:1.3em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
     width: 35px;
-    height: 34px;
+    height: 35px;
     background: white;
     border-radius: 50%;
-  
+}
+
+.social-icon__link{
+    text-decoration: none;
+
 }
 .menu{
     position: absolute;
@@ -142,7 +149,7 @@ h1, h2,h3, h4, h5 , h6 {
     left:0%;
     width: 100%;
     background: rgba(45, 51, 38, 0.85);
-    list-style-type: none ;
+    list-style: none ;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -161,9 +168,9 @@ h1, h2,h3, h4, h5 , h6 {
 }
 .menu__link--select{
     background: rgba(130, 199, 57, 0.85);
-    columns: #303030;;
     
 }
+/*
 .show{
     left:0;
 }
@@ -173,44 +180,35 @@ h1, h2,h3, h4, h5 , h6 {
 /*---------banner-----------------*/
 
 .banner{
-    margin-top: 60px;
+    margin-top: -55px;
     position: relative;
-    z-index: 1000;
 }
-.banner .contenedor{
+.banner :before{
+    content: '';
     position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.7);
+    z-index: 1000;
+    top:0;
+}
+.banner__img{
+    width:100%;
+    height: 500px;
+    object-fit: cover;
+}
+.banner__titulo{
+    width: 90%;
+    color: black;
+    position: absolute;
+    text-align: center;
+    z-index: 50%;
     top: 50%;
+    font-family: 'Merriweather', sans-serif;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 100%;
-    color: #ffffff;
-    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-/*ñ-----------info----------------*/
 
-.info__columna{
-    background: #f2fad1;
-    color:black;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 30px;
-}
-
-.somos__columna{
-    position: relative;
-}
-.somos__descripcion{
-    position: absolute;
-    top:0;
-    left: 0;
-    color: #ffff;
-    background: rgba(0,0,0,0,5);
-    width: 60%;
-}
-
-.somos__titulo{
-    font-size: 25px;
-    margin:5px 0;
-
-}
