@@ -1,6 +1,7 @@
-var btnmenu = document.getElementById('btn-menu');
-var nav= document.getElementById('nav');
+let btnMenu = document.getElementById('btnmenu');
+let menu= document.getElementById('menu');
 
 btnMenu.addEventListener('click',function(){
-    nav.classList.toggle('show');
+    'use strict';
+    menu.classList.toggle('show');
 });
