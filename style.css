@@ -215,7 +215,13 @@ h1, h2,h3, h4, h5 , h6 {
     height: 500px;
     object-fit: cover;
 
-}  
+}
+.shop_fast_view-img{
+    width:20%;
+    height:20%;
+    object-fit: cover;
+    display: inline;
+}
 .banner__titulo{
     width: 90%;
     color: white;
