@@ -42,6 +42,11 @@ h1, h2,h3, h4, h5 , h6 {
  /**/   align-items: center;
 }
 
+.main{ 
+text-align: center;
+margin-top: 30px;}
+
+
 .column{
     width: 100%;
 }
@@ -111,12 +116,12 @@ h1, h2,h3, h4, h5 , h6 {
  
   
     display: block;
-    color: white;
+    color: rgb(201, 110, 110);
     border: 1px solid white;
-    border-radius: 3px;
+    border-radius:5px;
     width: 40px;
     height: 40px;
-    line-height: 45px;
+    line-height: 0px;
     text-align: center;
     cursor: pointer;
     font-size: 1.5em;
